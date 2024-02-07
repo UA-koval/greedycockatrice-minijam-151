@@ -1,0 +1,184 @@
+[gd_scene load_steps=15 format=3 uid="uid://bj4gjcmwr5qgp"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_2oe3a"]
+[ext_resource type="FontFile" uid="uid://b62aesiv1bx0q" path="res://prstartk.ttf" id="2_pd0bn"]
+[ext_resource type="PackedScene" uid="uid://d1vakx6xpj7fp" path="res://Objects/player_1_craft.tscn" id="2_ty2c6"]
+[ext_resource type="Texture2D" uid="uid://bpckxvk0gg2lf" path="res://Assets/coin.png" id="3_5bhaf"]
+[ext_resource type="Texture2D" uid="uid://cvthiermhebkf" path="res://Assets/castle.png" id="4_3myeu"]
+[ext_resource type="Theme" uid="uid://cxor3eycr2nt5" path="res://main.theme" id="5_7odak"]
+[ext_resource type="AudioStream" uid="uid://cm5fh8qbel0oy" path="res://Sound by Dee Jay Arbuz/123.wav" id="7_jetqq"]
+[ext_resource type="AudioStream" uid="uid://dr0x03x87p8nk" path="res://Sound by Dee Jay Arbuz/Game theme.mp3" id="8_o1rjl"]
+[ext_resource type="AudioStream" uid="uid://cbhy42s5gd7qb" path="res://Sound by Dee Jay Arbuz/time`s up.wav" id="9_ipoe2"]
+[ext_resource type="AudioStream" uid="uid://bnbhneqayyukc" path="res://Sound by Dee Jay Arbuz/click.wav" id="10_bpkam"]
+[ext_resource type="AudioStream" uid="uid://crkmwryer8js3" path="res://Sound by Dee Jay Arbuz/start.wav" id="11_hgrim"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qmyge"]
+font = ExtResource("2_pd0bn")
+font_size = 60
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gupel"]
+radius = 67.6018
+
+[sub_resource type="LabelSettings" id="LabelSettings_54qxf"]
+font = ExtResource("2_pd0bn")
+font_size = 50
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_2oe3a")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 1126.0
+offset_top = 20.0
+offset_right = 1630.0
+offset_bottom = 151.0
+text = "60"
+label_settings = SubResource("LabelSettings_qmyge")
+
+[node name="Player1Craft" parent="." instance=ExtResource("2_ty2c6")]
+z_index = 1
+position = Vector2(640, 360)
+up_direction = Vector2(0, 1)
+thrust_power = 700
+max_velocity = Vector2(1800, 700)
+max_thrust_velocity = Vector2(600, 300)
+resistance = 100.0
+
+[node name="Map" type="Sprite2D" parent="."]
+z_index = -100
+centered = false
+
+[node name="SpawnCoinTimer" type="Timer" parent="Map"]
+wait_time = 1.5
+autostart = true
+
+[node name="Coin" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+texture_filter = 1
+position = Vector2(545.5, 40)
+scale = Vector2(0.426829, 0.426829)
+texture = ExtResource("3_5bhaf")
+
+[node name="Coin2" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+texture_filter = 1
+position = Vector2(600, 40)
+scale = Vector2(0.426829, 0.426829)
+texture = ExtResource("3_5bhaf")
+
+[node name="Coin3" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+texture_filter = 1
+position = Vector2(650, 40)
+scale = Vector2(0.426829, 0.426829)
+texture = ExtResource("3_5bhaf")
+
+[node name="Coin4" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+texture_filter = 1
+position = Vector2(700, 40)
+scale = Vector2(0.426829, 0.426829)
+texture = ExtResource("3_5bhaf")
+
+[node name="Coin5" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.196078)
+texture_filter = 1
+position = Vector2(750, 40)
+scale = Vector2(0.426829, 0.426829)
+texture = ExtResource("3_5bhaf")
+
+[node name="Coin6" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(50, 40)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_5bhaf")
+
+[node name="Label" type="Label" parent="Coin6"]
+offset_left = 58.5714
+offset_top = -42.1714
+offset_right = 562.571
+offset_bottom = 88.8286
+text = "0"
+label_settings = SubResource("LabelSettings_qmyge")
+
+[node name="Castle" type="Sprite2D" parent="."]
+position = Vector2(640, 340)
+scale = Vector2(0.61, 0.61)
+texture = ExtResource("4_3myeu")
+
+[node name="Area2D" type="Area2D" parent="Castle"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Castle/Area2D"]
+shape = SubResource("CircleShape2D_gupel")
+
+[node name="TimerGameOver" type="Timer" parent="."]
+wait_time = 60.0
+one_shot = true
+
+[node name="GameStart" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+offset_left = 281.0
+offset_top = 65.0
+offset_right = 1019.0
+offset_bottom = 246.0
+theme = ExtResource("5_7odak")
+
+[node name="GameStartLabel" type="Label" parent="."]
+offset_left = 261.0
+offset_top = 65.0
+offset_right = 1043.0
+offset_bottom = 362.0
+text = "Time's up!
+Your score: 000
+Try Again?"
+label_settings = SubResource("LabelSettings_54qxf")
+horizontal_alignment = 1
+
+[node name="Restart" type="Button" parent="."]
+visible = false
+offset_left = 486.0
+offset_top = 544.0
+offset_right = 778.0
+offset_bottom = 598.0
+theme = ExtResource("5_7odak")
+button_mask = 7
+text = "Restart"
+
+[node name="Back" type="Button" parent="."]
+visible = false
+offset_left = 485.0
+offset_top = 626.0
+offset_right = 780.0
+offset_bottom = 676.0
+theme = ExtResource("5_7odak")
+button_mask = 7
+text = "Go back to menu"
+
+[node name="123" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_jetqq")
+volume_db = 10.0
+
+[node name="music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_o1rjl")
+volume_db = -5.0
+
+[node name="timesupPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_ipoe2")
+
+[node name="ButtonSEPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_bpkam")
+volume_db = -10.0
+
+[node name="start" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_hgrim")
+
+[connection signal="timeout" from="Map/SpawnCoinTimer" to="." method="_on_spawn_coin_timer_timeout"]
+[connection signal="timeout" from="TimerGameOver" to="." method="_on_timer_game_over_timeout"]
+[connection signal="timeout" from="GameStart" to="." method="_on_game_start_timeout"]
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="finished" from="music" to="." method="_on_music_finished"]

@@ -1,0 +1,75 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1707061152
+export_presets.cfg::TextFile::-1::1707059669::0::1::::<><>::
+icon.svg::CompressedTexture2D::5607009092794669124::1706883006::1706883013::1::::<><>::
+main.gd::GDScript::-1::1706990978::0::1::::<>Node2D<>::
+main.theme::Theme::6417168498007522816::1706989509::0::1::::<><>::uid://b62aesiv1bx0q::::res://prstartk.ttf
+main.tscn::PackedScene::3078367730012717019::1707060464::0::1::::<><>::res://main.gd<>uid://b62aesiv1bx0q::::res://prstartk.ttf<>uid://d1vakx6xpj7fp::::res://Objects/player_1_craft.tscn<>uid://bpckxvk0gg2lf::::res://Assets/coin.png<>uid://cvthiermhebkf::::res://Assets/castle.png<>uid://cxor3eycr2nt5::::res://main.theme<>uid://cm5fh8qbel0oy::::res://Sound by Dee Jay Arbuz/123.wav<>uid://dr0x03x87p8nk::::res://Sound by Dee Jay Arbuz/Game theme.mp3<>uid://cbhy42s5gd7qb::::res://Sound by Dee Jay Arbuz/time`s up.wav<>uid://bnbhneqayyukc::::res://Sound by Dee Jay Arbuz/click.wav<>uid://crkmwryer8js3::::res://Sound by Dee Jay Arbuz/start.wav
+menu.gd::GDScript::-1::1706990665::0::1::::<>Node2D<>::
+menu.tscn::PackedScene::3071854213148479242::1707060464::0::1::::<><>::res://menu.gd<>uid://b62aesiv1bx0q::::res://prstartk.ttf<>uid://cxor3eycr2nt5::::res://main.theme<>uid://crkmwryer8js3::::res://Sound by Dee Jay Arbuz/start.wav<>uid://clqay5l64cm6g::::res://Sound by Dee Jay Arbuz/menu.mp3
+prstartk.ttf::FontFile::4618021137775031814::1075822176::1706987646::1::::<><>::
+village.tscn::PackedScene::964555410541974732::1706985041::0::1::::<><>::uid://c3narbpvqhuoh::::res://Assets/village/1.png<>uid://1s1auk6fvxfh::::res://Assets/village/2.png<>uid://vyf2k1c4tgps::::res://Assets/village/3.png<>uid://dkidg8c1sihh8::::res://Assets/village/4.png
+::res://Assets/::1706987444
+Asteroid 01 - Explode.png::CompressedTexture2D::4675548198149182948::1686909811::1706897019::1::::<><>::
+Asteroid - Flame.png::CompressedTexture2D::894359575702950034::1686909811::1706897019::1::::<><>::
+biggerboom1.png::CompressedTexture2D::4445330317256040852::1686909811::1706897019::1::::<><>::
+biggerboom2.png::CompressedTexture2D::2098828960334666343::1686909811::1706897019::1::::<><>::
+biggerboom3.png::CompressedTexture2D::4888453889882042436::1686909811::1706897019::1::::<><>::
+biggerboom4.png::CompressedTexture2D::5555528937606253415::1686909811::1706897019::1::::<><>::
+castle.png::CompressedTexture2D::6286469803322436141::1706987443::1706987444::1::::<><>::
+coin.png::CompressedTexture2D::3444031456541751831::1706985195::1706985197::1::::<><>::
+Earth-Like planet.png::CompressedTexture2D::4044569023745058846::1686909811::1706897019::1::::<><>::
+Main Ship - Base - Damaged.png::CompressedTexture2D::7561238873864368854::1686909811::1706897019::1::::<><>::
+Main Ship - Base - Full health.png::CompressedTexture2D::5065653270322522273::1686909811::1706897019::1::::<><>::
+Main Ship - Base - Slight damage.png::CompressedTexture2D::4355475942263943232::1686909811::1706897019::1::::<><>::
+Main Ship - Base - Very damaged.png::CompressedTexture2D::5690588329588196014::1686909811::1706897019::1::::<><>::
+Main Ship - Engines - Base Engine - Idle.png::CompressedTexture2D::2287849378319613681::1686909811::1706897019::1::::<><>::
+Main Ship - Engines - Base Engine - Powering.png::CompressedTexture2D::419238025287098838::1686909811::1706897019::1::::<><>::
+Main Ship - Engines - Base Engine - Spritesheet.png::CompressedTexture2D::3312123113332445513::1686909811::1706897019::1::::<><>::
+Main Ship - Engines - Base Engine.png::CompressedTexture2D::4408573967657874218::1686909811::1706897019::1::::<><>::
+Main Ship - Engines - Burst Engine.png::CompressedTexture2D::7160557756358391526::1686909811::1706897019::1::::<><>::
+Starry background  - Layer 01 - Void.png::CompressedTexture2D::2140943373616892930::1686909811::1706897020::1::::<><>::
+Starry background  - Layer 02 - Stars.png::CompressedTexture2D::4773821980467980791::1686909811::1706897019::1::::<><>::
+::res://Assets/Dragon/::1706986385
+reddragonfly4.png::CompressedTexture2D::8824333717778938363::1706986384::1706986385::1::::<><>::
+::res://Assets/village/::1706985039
+1.png::CompressedTexture2D::6764996335221509579::1706985004::1706985039::1::::<><>::
+2.png::CompressedTexture2D::1863648443304925029::1706985022::1706985039::1::::<><>::
+3.png::CompressedTexture2D::1523863149424174288::1706985031::1706985039::1::::<><>::
+4.png::CompressedTexture2D::7877860112799695435::1706985038::1706985039::1::::<><>::
+::res://Build/::1707060075
+index.apple-touch-icon.png::CompressedTexture2D::5796789715368490373::1707060071::1707060071::1::::<><>::
+index.icon.png::CompressedTexture2D::6600129886758223515::1707060071::1707060071::1::::<><>::
+index.png::CompressedTexture2D::3738962404170976864::1707060071::1707060071::1::::<><>::
+::res://Classes/::1706990121
+CelestialBody2D.gd::GDScript::-1::1686909811::0::1::::CelestialBody2D<>StaticBody2D<>::
+SpaceCraft.gd::GDScript::-1::1706990121::0::1::::SpaceCraft<>CharacterBody2D<>::
+::res://Objects/::1707060464
+earth.tscn::PackedScene::5075932660522704788::1686909811::0::1::::<><>::res://Scripts/earth.gd<>uid://bxvhpw2kew27c::::res://Assets/Earth-Like planet.png
+explosion.tscn::PackedScene::6937704301921803078::1686909811::0::1::::<><>::uid://b4ll68vlq6ufc::::res://Assets/biggerboom1.png<>uid://45xn2ysx50kp::::res://Assets/biggerboom2.png<>uid://cbwaeejyeleoa::::res://Assets/biggerboom3.png<>uid://clfe0q6hybiex::::res://Assets/biggerboom4.png<>res://Scripts/explosion.gd
+player_1_craft.tscn::PackedScene::9027543033433890321::1707060464::0::1::::<><>::uid://b32stl60do0yw::::res://Assets/Main Ship - Engines - Base Engine.png<>res://Scripts/player_1_craft.gd<>uid://dxytqtchikspf::::res://Assets/Dragon/reddragonfly4.png<>uid://dutc54jogo6cu::::res://Sound by Dee Jay Arbuz/discardCoin.wav<>uid://bngogio4t8xtp::::res://Assets/Main Ship - Engines - Base Engine - Spritesheet.png<>uid://cbdo662ap5o1i::::res://Sound by Dee Jay Arbuz/hitTheWall.wav<>uid://f8c13d3tcwpa::::res://Assets/Main Ship - Engines - Base Engine - Powering.png<>uid://c2exg32snn05i::::res://Sound by Dee Jay Arbuz/pickupCoin.wav
+player_2_craft.tscn::PackedScene::8841555852542331664::1686909811::0::1::::<><>::res://Scripts/player_2_craft.gd<>uid://b32stl60do0yw::::res://Assets/Main Ship - Engines - Base Engine.png<>uid://cef3tmch8hekv::::res://Assets/Main Ship - Base - Full health.png<>uid://b3b3b1us4sqkm::::res://Assets/Main Ship - Base - Slight damage.png<>uid://dfyyq8p8t56kg::::res://Assets/Main Ship - Base - Damaged.png<>uid://cnctfndc33ksc::::res://Assets/Main Ship - Base - Very damaged.png<>uid://bngogio4t8xtp::::res://Assets/Main Ship - Engines - Base Engine - Spritesheet.png<>uid://f8c13d3tcwpa::::res://Assets/Main Ship - Engines - Base Engine - Powering.png
+torpedo.tscn::PackedScene::6753794092964329642::1686909811::0::1::::<><>::uid://m0h8bdttkrug::::res://Assets/Asteroid - Flame.png<>res://Scripts/torpedo.gd
+TwinklingStars.tscn::PackedScene::295437815974808420::1686909811::0::1::::<><>::uid://caaqfebm8l0kx::::res://Assets/Starry background  - Layer 02 - Stars.png
+::res://Promotion Material/::1707061505
+banner.png::CompressedTexture2D::8667244833778758333::1707061504::1707061505::1::::<><>::
+Cover.png::CompressedTexture2D::8951940837568132525::1707061160::1707061175::1::::<><>::
+Cover_small.png::CompressedTexture2D::8212735409181990014::1707061330::1707061330::1::::<><>::
+game_screen.png::CompressedTexture2D::6329843881958788002::1707062262::1707062262::1::::<><>::
+::res://Scripts/::1706990565
+earth.gd::GDScript::-1::1686909811::0::1::::<>CelestialBody2D<>::
+explosion.gd::GDScript::-1::1686909811::0::1::::<>AnimatedSprite2D<>::
+level_manager.gd::GDScript::-1::1706894880::0::1::::<>Node2D<>::
+player_1_craft.gd::GDScript::-1::1706990565::0::1::::<>SpaceCraft<>::
+player_2_craft.gd::GDScript::-1::1686909811::0::1::::<>SpaceCraft<>::
+torpedo.gd::GDScript::-1::1686909811::0::1::::<>Area2D<>::
+::res://Sound by Dee Jay Arbuz/::1706989583
+123.wav::AudioStreamWAV::5677356667224218512::1706988865::1706989444::1::::<><>::
+click.wav::AudioStreamWAV::3301388497855020774::1706989019::1706989444::1::::<><>::
+discardCoin.wav::AudioStreamWAV::8602438646694860452::1706891306::1706989444::1::::<><>::
+Game theme.mp3::AudioStreamMP3::8405524480185664672::1706979702::1706989444::1::::<><>::
+hitTheWall.wav::AudioStreamWAV::4850130411751011028::1706890702::1706989444::1::::<><>::
+menu.mp3::AudioStreamMP3::5577993144663930580::1706903292::1706989444::1::::<><>::
+pickupCoin.wav::AudioStreamWAV::6677606375425647776::1706890273::1706989444::1::::<><>::
+start.wav::AudioStreamWAV::5987464308330481596::1706989203::1706989444::1::::<><>::
+time`s up.wav::AudioStreamWAV::4858991298460459609::1706989294::1706989444::1::::<><>::

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cbhy42s5gd7qb"
+path="res://.godot/imported/time`s up.wav-1373d71d7d9191aaaef8d3714f47e00b.sample"
+
+[deps]
+
+source_file="res://Sound by Dee Jay Arbuz/time`s up.wav"
+dest_files=["res://.godot/imported/time`s up.wav-1373d71d7d9191aaaef8d3714f47e00b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

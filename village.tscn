@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://n0ic7hgyphbw"]
+
+[ext_resource type="Texture2D" uid="uid://c3narbpvqhuoh" path="res://Assets/village/1.png" id="1_oyrnr"]
+[ext_resource type="Texture2D" uid="uid://1s1auk6fvxfh" path="res://Assets/village/2.png" id="2_sm3jp"]
+[ext_resource type="Texture2D" uid="uid://vyf2k1c4tgps" path="res://Assets/village/3.png" id="3_eaxyv"]
+[ext_resource type="Texture2D" uid="uid://dkidg8c1sihh8" path="res://Assets/village/4.png" id="4_n8hlu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_up7a0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_oyrnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_sm3jp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_eaxyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n8hlu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_85ja6"]
+radius = 35.0571
+
+[node name="VillageIcon" type="Sprite2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = -3
+position = Vector2(2.11089, 2)
+scale = Vector2(0.35603, 0.348837)
+sprite_frames = SubResource("SpriteFrames_up7a0")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_85ja6")

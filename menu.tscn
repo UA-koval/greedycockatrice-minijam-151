@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://bj1a8wsm7my7k"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_bgkcx"]
+[ext_resource type="FontFile" uid="uid://b62aesiv1bx0q" path="res://prstartk.ttf" id="2_dt256"]
+[ext_resource type="Theme" uid="uid://cxor3eycr2nt5" path="res://main.theme" id="2_tmrd5"]
+[ext_resource type="AudioStream" uid="uid://crkmwryer8js3" path="res://Sound by Dee Jay Arbuz/start.wav" id="4_87nx3"]
+[ext_resource type="AudioStream" uid="uid://clqay5l64cm6g" path="res://Sound by Dee Jay Arbuz/menu.mp3" id="5_nvslp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qfipg"]
+font = ExtResource("2_dt256")
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_bgkcx")
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+visible = false
+z_index = 5
+offset_left = 12.0
+offset_top = 298.0
+offset_right = 320.0
+offset_bottom = 538.0
+vertical = true
+
+[node name="Title" type="Label" parent="BoxContainer"]
+layout_mode = 2
+text = "Greedy Cockatrice"
+label_settings = SubResource("LabelSettings_qfipg")
+
+[node name="Play" type="Button" parent="BoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_tmrd5")
+text = "Play"
+alignment = 0
+
+[node name="selectSE" type="AudioStreamPlayer" parent="BoxContainer/Play"]
+stream = ExtResource("4_87nx3")
+
+[node name="Map" type="Sprite2D" parent="."]
+z_index = -100
+centered = false
+
+[node name="SpawnCoinTimer" type="Timer" parent="Map"]
+wait_time = 1.5
+autostart = true
+
+[node name="menuMusicPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_nvslp")
+volume_db = -10.0
+
+[node name="start" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_87nx3")
+
+[connection signal="pressed" from="BoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="timeout" from="Map/SpawnCoinTimer" to="." method="_on_spawn_coin_timer_timeout"]

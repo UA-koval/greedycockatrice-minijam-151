@@ -1,0 +1,11 @@
+AudioStreamPlayer
+Panel
+Button
+Label
+Timer
+BoxContainer
+Container
+CollisionShape2D
+Area2D
+AnimatedSprite2D
+Sprite2D
